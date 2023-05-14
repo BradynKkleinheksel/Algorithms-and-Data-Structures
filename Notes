@@ -1,0 +1,34 @@
+# Start of my notes
+---
+
+_________________________________________________________________Data Structure_________________________________________________________________________
+O
+~Theoretical defintion of the complexity of an algorithm as a function of the size 
+
+~It is used to describe the upper bound of the growth rate of a function, which represents the time complexity of a algorithm. For example, if an algorithm takes time proportional to the size of the input n, then the time complexity is said to be O(n)
+
+Polynomial Runtime == An aglorithm is said to be solvable in polynomial time if the number of steps required to complete the algorithm for a given input 
+is O(n^k) for some non-negative interget k, where n is the complexity of the input. K is defined as a value / number. K has to be a risen to a power of some sort for it to be a Polynomial runtime
+
+Exponetial Runtimes are considered highly un effective.  Factorial // Combinatorial Algorithms and Brute force algorithms are examples of this.
+
+------------------------------------------|Alogroithms and Runtimes in Big O Notation|-----------------------------------------------------------------------
+
+O(n) == Linear Search
+
+O(1) == Constant Search Speed 
+
+O(log n) == Binary Search, refers to base-2 logarithic function denoted as log 2. A equation looks like this (log2 of n + 1)
+
+O(n^2) == Quadratic Runtime
+
+O(n log n) == Quasilinear Runtime (appears in merge sort alogrithms)
+
+O(b^n) == Brute force (think padlock example)
+
+O(n!) == Factorial // Combinatorial algorithm
+Meaning n * n-1 until you reach 1. So if n was 6 the equation would look like 6*5*4*3*2*1 = 720 
+
+
+
+
