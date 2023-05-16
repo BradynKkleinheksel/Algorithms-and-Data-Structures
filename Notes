@@ -1,16 +1,30 @@
 # Start of my notes
 ---
 
-_________________________________________________________________Data Structure_________________________________________________________________________
-O
+______________________________________________________________Algorithms and Data Structures_______________________________________________________________________
+O:
 ~Theoretical defintion of the complexity of an algorithm as a function of the size 
 
 ~It is used to describe the upper bound of the growth rate of a function, which represents the time complexity of a algorithm. For example, if an algorithm takes time proportional to the size of the input n, then the time complexity is said to be O(n)
 
-Polynomial Runtime == An aglorithm is said to be solvable in polynomial time if the number of steps required to complete the algorithm for a given input 
+Polynomial Runtime: 
+~An aglorithm is said to be solvable in polynomial time if the number of steps required to complete the algorithm for a given input 
 is O(n^k) for some non-negative interget k, where n is the complexity of the input. K is defined as a value / number. K has to be a risen to a power of some sort for it to be a Polynomial runtime
 
 Exponetial Runtimes are considered highly un effective.  Factorial // Combinatorial Algorithms and Brute force algorithms are examples of this.
+
+Recursive Algorithms:  
+~Recursive aglorithms are functions that are called with a sequence and will proceed to keep calling themselves and sending the resulting sequence through the same function until a answer is reached. Some langauges have Tail call Optimisation which helps reduce the space complextiy of recursive algorithms. Tail meaning the end of the function, rather then the head which is the main code. See recursive_binary_search.py 
+[ Researce more on Tail End Optimisation ] 
+
+Iterative algorithms:
+~Refers to a algorithm that uses a loop to exectue a series of instructions multiple times until the function has given a result, or until a condition is met. 
+
+Space Complexity:
+~ Space complexity refers to the amount of memory space required by an algorithm to execute, including intermediate results used in the data or function, and the program itself.
+~ A recursive binary algorithm can be seen with a logarithmic space complexity due to the inventing of new sequences in a logarithmic pattern. Different languages handle memory in different ways, so space complexity is relevant to the practices that are used. 
+~ A iterative binary search algorithm can be seen with a constant space complexity, as seen in binary_search.py. This is due to variables being used as a way
+to split the list without creating a new one. 
 
 ------------------------------------------|Alogroithms and Runtimes in Big O Notation|-----------------------------------------------------------------------
 
