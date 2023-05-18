@@ -74,7 +74,8 @@ while i is True:
         loopask = input('Would you like to play again: Yes/No? ')
         loopasklower = loopask.lower()
         if loopasklower not in yesno:
-            print('message was invalid') and resultandloop(computerscore, playerscore)
+            print('message was invalid')
+            resultandloop(computerscore, playerscore)
         elif loopasklower == 'no':
             print('Thanks for playing!')
             i = False
