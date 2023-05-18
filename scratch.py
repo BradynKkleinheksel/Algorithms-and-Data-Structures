@@ -2,7 +2,7 @@
 import random 
 
 i = True 
-
+bootupcall = False
 while i is True:
     
     computerscore = 0
@@ -20,10 +20,9 @@ while i is True:
             playerpicksfun(name)
         else:
             rpsgenerate(playerpicklower)
-                                                                                                    #To do: Convert player string values to 0, 1, 2, then create a truth table 
+                                                                                                   
     
-    
-    def rpsgenerate(store):                                                                                       #for said values in the truthtable function. Then have a final 
+    def rpsgenerate(store):                                                                                     
        rps = random.randint(0, 2)    # 0 is rock, 1 paper, 2 is scissors
     
        if rps == 0:
@@ -39,7 +38,9 @@ while i is True:
     def truthtable(computerpick1, playerpick1 ):
         global computerscore
         global playerscore
-        
+
+        print(f'Computer chose: {computerpick1} ')
+    
         if computerpick1 == 'paper' and playerpick1 == 'rock':
             computerscore += 1
             resultandloop(computerscore, playerscore)
@@ -59,11 +60,14 @@ while i is True:
             playerscore += 1
             resultandloop(computerscore, playerscore)
         else:
-            print('You Tied!') and resultandloop(computerscore, playerscore)
+            print('You Tied!')
+            resultandloop(computerscore, playerscore)
+        
 
 
 
     def resultandloop(computerscore, playerscore):
+        global i
         yesno = ('yes', 'no')
         print(f'Your score is: {playerscore}')
         print(f'The computer score is: {computerscore}')
@@ -86,10 +90,13 @@ while i is True:
         if yesnolower == 'no':
             i = False
         elif yesnolower == 'yes':
-            name = input('What is your name?')
+            name = input('What is your name? ')
             playerpicksfun()
         else: 
             print('Message was invalid, try again')
-    
-    bootup()
+
+    if not bootupcall:
+        bootup()
+        bootupcall = True    
+
     
